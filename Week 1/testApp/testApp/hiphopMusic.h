@@ -10,4 +10,8 @@
 
 @interface hiphopMusic : baseMusic
 
+@property int timeForSongs;
+@property int loadingTime;
+@property int listeningTime;
+
 @end

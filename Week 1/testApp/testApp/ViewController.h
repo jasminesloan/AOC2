@@ -7,7 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "musicfactory.h"
 
 @interface ViewController : UIViewController
+{
+    UILabel * titleLable;
+    UILabel * popMusicLabel;
+    UILabel * popMusicTimeLabel;
+    int timeToCompleteRemix;
+    UILabel * randbLabel;
+    UILabel * randbTimeLabel;
+    int timeToCompleteAlbum;
+    UILabel * hipHopTimeLabel;
+    NSString *hipHopTimeString;
+    UILabel * hipHopLabel;
+    int timeToCompleteHipHop;
+    
+}
 
 @end

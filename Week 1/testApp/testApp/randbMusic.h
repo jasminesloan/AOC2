@@ -8,6 +8,25 @@
 
 #import "baseMusic.h"
 
-@interface r_bMusic : baseMusic
+@interface randbMusic : baseMusic
+{
+    int randbSong;
+}
+
+typedef enum {
+    RIHANNA,
+    MONICA,
+    KEYSHIACOLE
+} randbSong;
+
+@property NSString *songArtist;
+@property NSString *songTitle;
+@property int totalSongTime;
+@property NSString *artistAlbum;
+@property int albumTimeMinutes;
+@property int albumExpectedTime;
+@property int numberOfTracks;
+@property int totalAlbumTime;
+@property int songTimeMinutes;
 
 @end

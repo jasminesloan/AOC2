@@ -10,4 +10,11 @@
 
 @interface popMusic : baseMusic
 
+// data members for remixes and time to play per remix
+@property int remixes;
+@property int timePerRemix;
+
+// calculation to override
+-(void)calculateSongTime;
+
 @end

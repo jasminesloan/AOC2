@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "baseMusic.h"
+#import "popMusic.h"
+#import "hiphopMusic.h"
+#import "randbMusic.h"
 
 @interface musicfactory : NSObject
+
++(baseMusic *)createNewMusic: (int)musicType;
 
 @end

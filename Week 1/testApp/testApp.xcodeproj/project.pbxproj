@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCA509D4165ABD38003FF6AB /* musicfactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA509D3165ABD38003FF6AB /* musicfactory.m */; };
+		DCA509D8165ABD7C003FF6AB /* baseMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA509D7165ABD7C003FF6AB /* baseMusic.m */; };
+		DCA509DB165ABDA8003FF6AB /* hiphopMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA509DA165ABDA8003FF6AB /* hiphopMusic.m */; };
+		DCA509DE165ABDC5003FF6AB /* randbMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA509DD165ABDC5003FF6AB /* randbMusic.m */; };
+		DCA509E1165ABE38003FF6AB /* popMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA509E0165ABE38003FF6AB /* popMusic.m */; };
 		DCFDB8D1165A9A4200143B9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFDB8D0165A9A4200143B9F /* UIKit.framework */; };
 		DCFDB8D3165A9A4200143B9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFDB8D2165A9A4200143B9F /* Foundation.framework */; };
 		DCFDB8D5165A9A4200143B9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFDB8D4165A9A4200143B9F /* CoreGraphics.framework */; };
@@ -36,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DCA509D2165ABD38003FF6AB /* musicfactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = musicfactory.h; sourceTree = "<group>"; };
+		DCA509D3165ABD38003FF6AB /* musicfactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = musicfactory.m; sourceTree = "<group>"; };
+		DCA509D6165ABD7C003FF6AB /* baseMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseMusic.h; sourceTree = "<group>"; };
+		DCA509D7165ABD7C003FF6AB /* baseMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseMusic.m; sourceTree = "<group>"; };
+		DCA509D9165ABDA8003FF6AB /* hiphopMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hiphopMusic.h; sourceTree = "<group>"; };
+		DCA509DA165ABDA8003FF6AB /* hiphopMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hiphopMusic.m; sourceTree = "<group>"; };
+		DCA509DC165ABDC5003FF6AB /* randbMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = randbMusic.h; sourceTree = "<group>"; };
+		DCA509DD165ABDC5003FF6AB /* randbMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = randbMusic.m; sourceTree = "<group>"; };
+		DCA509DF165ABE38003FF6AB /* popMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popMusic.h; sourceTree = "<group>"; };
+		DCA509E0165ABE38003FF6AB /* popMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popMusic.m; sourceTree = "<group>"; };
 		DCFDB8CC165A9A4200143B9F /* testApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFDB8D0165A9A4200143B9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DCFDB8D2165A9A4200143B9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -123,6 +138,16 @@
 				DCFDB8EB165A9A4200143B9F /* ViewController.h */,
 				DCFDB8EC165A9A4200143B9F /* ViewController.m */,
 				DCFDB8D7165A9A4200143B9F /* Supporting Files */,
+				DCA509D2165ABD38003FF6AB /* musicfactory.h */,
+				DCA509DC165ABDC5003FF6AB /* randbMusic.h */,
+				DCA509DD165ABDC5003FF6AB /* randbMusic.m */,
+				DCA509D6165ABD7C003FF6AB /* baseMusic.h */,
+				DCA509DF165ABE38003FF6AB /* popMusic.h */,
+				DCA509E0165ABE38003FF6AB /* popMusic.m */,
+				DCA509D9165ABDA8003FF6AB /* hiphopMusic.h */,
+				DCA509DA165ABDA8003FF6AB /* hiphopMusic.m */,
+				DCA509D7165ABD7C003FF6AB /* baseMusic.m */,
+				DCA509D3165ABD38003FF6AB /* musicfactory.m */,
 			);
 			path = testApp;
 			sourceTree = "<group>";
@@ -273,6 +298,11 @@
 				DCFDB8DD165A9A4200143B9F /* main.m in Sources */,
 				DCFDB8E1165A9A4200143B9F /* AppDelegate.m in Sources */,
 				DCFDB8ED165A9A4200143B9F /* ViewController.m in Sources */,
+				DCA509D4165ABD38003FF6AB /* musicfactory.m in Sources */,
+				DCA509D8165ABD7C003FF6AB /* baseMusic.m in Sources */,
+				DCA509DB165ABDA8003FF6AB /* hiphopMusic.m in Sources */,
+				DCA509DE165ABDC5003FF6AB /* randbMusic.m in Sources */,
+				DCA509E1165ABE38003FF6AB /* popMusic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +477,7 @@
 				DCFDB907165A9A4300143B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCFDB908165A9A4300143B9F /* Build configuration list for PBXNativeTarget "testAppTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +486,7 @@
 				DCFDB90A165A9A4300143B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

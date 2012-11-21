@@ -10,4 +10,22 @@
 
 @implementation musicfactory
 
++(baseMusic *)createNewMusic: (int)musicType;
+{
+        //pop music requested
+    if (musicType == POP){
+        return [[popMusic alloc] init];
+        
+        //r & b music is requested
+    } else if (musicType == RANDB){
+        return [[randbMusic alloc] init];
+    
+        //hip hop music is requested
+    }else if (musicType == HIPHOP){
+        return [[hiphopMusic alloc] init];
+    }
+    
+    else return nil;
+}
+
 @end
