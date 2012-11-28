@@ -23,6 +23,9 @@
 		DC465EC616669873004853AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC465EA116669873004853AB /* Foundation.framework */; };
 		DC465ECE16669873004853AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC465ECC16669873004853AB /* InfoPlist.strings */; };
 		DC465ED116669873004853AB /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC465ED016669873004853AB /* CalculatorTests.m */; };
+		DC465EDD166698A1004853AB /* blackwood.png in Resources */ = {isa = PBXBuildFile; fileRef = DC465EDA166698A1004853AB /* blackwood.png */; };
+		DC465EDE166698A1004853AB /* darkwood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC465EDB166698A1004853AB /* darkwood.jpg */; };
+		DC465EDF166698A1004853AB /* woodgrain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC465EDC166698A1004853AB /* woodgrain.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		DC465ECD16669873004853AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC465ECF16669873004853AB /* CalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorTests.h; sourceTree = "<group>"; };
 		DC465ED016669873004853AB /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		DC465EDA166698A1004853AB /* blackwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackwood.png; sourceTree = "<group>"; };
+		DC465EDB166698A1004853AB /* darkwood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkwood.jpg; sourceTree = "<group>"; };
+		DC465EDC166698A1004853AB /* woodgrain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woodgrain.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,9 @@
 		DC465EA516669873004853AB /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				DC465EDA166698A1004853AB /* blackwood.png */,
+				DC465EDB166698A1004853AB /* darkwood.jpg */,
+				DC465EDC166698A1004853AB /* woodgrain.jpg */,
 				DC465EAE16669873004853AB /* AppDelegate.h */,
 				DC465EAF16669873004853AB /* AppDelegate.m */,
 				DC465EB716669873004853AB /* MainStoryboard.storyboard */,
@@ -236,6 +245,9 @@
 				DC465EB416669873004853AB /* Default@2x.png in Resources */,
 				DC465EB616669873004853AB /* Default-568h@2x.png in Resources */,
 				DC465EB916669873004853AB /* MainStoryboard.storyboard in Resources */,
+				DC465EDD166698A1004853AB /* blackwood.png in Resources */,
+				DC465EDE166698A1004853AB /* darkwood.jpg in Resources */,
+				DC465EDF166698A1004853AB /* woodgrain.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

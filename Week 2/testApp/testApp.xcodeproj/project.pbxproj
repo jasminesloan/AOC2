@@ -23,7 +23,11 @@
 		DC32D9A61663E81C00EAA838 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC32D9811663E81C00EAA838 /* Foundation.framework */; };
 		DC32D9AE1663E81C00EAA838 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC32D9AC1663E81C00EAA838 /* InfoPlist.strings */; };
 		DC32D9B11663E81C00EAA838 /* testAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC32D9B01663E81C00EAA838 /* testAppTests.m */; };
-		DC32D9C116653AE000EAA838 /* infoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC32D9C016653AE000EAA838 /* infoViewController.m */; };
+		DC465E84166672D5004853AB /* infoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC465E83166672D5004853AB /* infoViewController.xib */; };
+		DC465E8B16667731004853AB /* infoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC465E8A16667731004853AB /* infoViewController.m */; };
+		DCEF07621665C5430072AC3C /* blackwood.png in Resources */ = {isa = PBXBuildFile; fileRef = DCEF075F1665C5430072AC3C /* blackwood.png */; };
+		DCEF07631665C5430072AC3C /* darkwood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCEF07601665C5430072AC3C /* darkwood.jpg */; };
+		DCEF07641665C5430072AC3C /* woodgrain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCEF07611665C5430072AC3C /* woodgrain.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +63,12 @@
 		DC32D9AD1663E81C00EAA838 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC32D9AF1663E81C00EAA838 /* testAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testAppTests.h; sourceTree = "<group>"; };
 		DC32D9B01663E81C00EAA838 /* testAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testAppTests.m; sourceTree = "<group>"; };
-		DC32D9BF16653AE000EAA838 /* infoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoViewController.h; sourceTree = "<group>"; };
-		DC32D9C016653AE000EAA838 /* infoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoViewController.m; sourceTree = "<group>"; };
+		DC465E83166672D5004853AB /* infoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoViewController.xib; sourceTree = "<group>"; };
+		DC465E8916667731004853AB /* infoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoViewController.h; sourceTree = "<group>"; };
+		DC465E8A16667731004853AB /* infoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoViewController.m; sourceTree = "<group>"; };
+		DCEF075F1665C5430072AC3C /* blackwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackwood.png; sourceTree = "<group>"; };
+		DCEF07601665C5430072AC3C /* darkwood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkwood.jpg; sourceTree = "<group>"; };
+		DCEF07611665C5430072AC3C /* woodgrain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woodgrain.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,12 +128,18 @@
 		DC32D9851663E81C00EAA838 /* testApp */ = {
 			isa = PBXGroup;
 			children = (
+				DCEF075F1665C5430072AC3C /* blackwood.png */,
+				DCEF07601665C5430072AC3C /* darkwood.jpg */,
+				DCEF07611665C5430072AC3C /* woodgrain.jpg */,
 				DC32D98E1663E81C00EAA838 /* AppDelegate.h */,
 				DC32D98F1663E81C00EAA838 /* AppDelegate.m */,
 				DC32D9971663E81C00EAA838 /* MainStoryboard.storyboard */,
 				DC32D99A1663E81C00EAA838 /* ViewController.h */,
 				DC32D99B1663E81C00EAA838 /* ViewController.m */,
 				DC32D9861663E81C00EAA838 /* Supporting Files */,
+				DC465E83166672D5004853AB /* infoViewController.xib */,
+				DC465E8916667731004853AB /* infoViewController.h */,
+				DC465E8A16667731004853AB /* infoViewController.m */,
 			);
 			path = testApp;
 			sourceTree = "<group>";
@@ -140,8 +154,6 @@
 				DC32D9911663E81C00EAA838 /* Default.png */,
 				DC32D9931663E81C00EAA838 /* Default@2x.png */,
 				DC32D9951663E81C00EAA838 /* Default-568h@2x.png */,
-				DC32D9BF16653AE000EAA838 /* infoViewController.h */,
-				DC32D9C016653AE000EAA838 /* infoViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,6 +253,10 @@
 				DC32D9941663E81C00EAA838 /* Default@2x.png in Resources */,
 				DC32D9961663E81C00EAA838 /* Default-568h@2x.png in Resources */,
 				DC32D9991663E81C00EAA838 /* MainStoryboard.storyboard in Resources */,
+				DCEF07621665C5430072AC3C /* blackwood.png in Resources */,
+				DCEF07631665C5430072AC3C /* darkwood.jpg in Resources */,
+				DCEF07641665C5430072AC3C /* woodgrain.jpg in Resources */,
+				DC465E84166672D5004853AB /* infoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +294,7 @@
 				DC32D98C1663E81C00EAA838 /* main.m in Sources */,
 				DC32D9901663E81C00EAA838 /* AppDelegate.m in Sources */,
 				DC32D99C1663E81C00EAA838 /* ViewController.m in Sources */,
-				DC32D9C116653AE000EAA838 /* infoViewController.m in Sources */,
+				DC465E8B16667731004853AB /* infoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +469,7 @@
 				DC32D9B61663E81C00EAA838 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC32D9B71663E81C00EAA838 /* Build configuration list for PBXNativeTarget "testAppTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +478,7 @@
 				DC32D9B91663E81C00EAA838 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

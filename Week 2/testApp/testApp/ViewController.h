@@ -10,39 +10,29 @@
 
 @interface ViewController : UIViewController
 {
-    float numberValue;
+
+    IBOutlet UILabel *displayCalculator;
+    IBOutlet UISwitch *onOffButton;
+    IBOutlet UIImageView *imageView1;
+    IBOutlet UIImageView *imageView2;
+    IBOutlet UIImageView *imageView3;
+    UIImage *darkwoodImage;
+    int imageIndex;
+    int operatorButton;
+    int numberButton;
+    float currentNumber;
     float result;
-    
-    int selectedOperator;
-    
-    IBOutlet UITextField *displayCalculator;
-    IBOutlet UIButton *clearButton;
-    IBOutlet UIButton *clearNumber;
-    IBOutlet UIButton *zero;
-    IBOutlet UIButton *one;
-    IBOutlet UIButton *two;
-    IBOutlet UIButton *three;
-    IBOutlet UIButton *four;
-    IBOutlet UIButton *five;
-    IBOutlet UIButton *six;
-    IBOutlet UIButton *seven;
-    IBOutlet UIButton *eight;
-    IBOutlet UIButton *nine;
-    IBOutlet UIButton *divide;
-    IBOutlet UIButton *multiply;
-    IBOutlet UIButton *minus;
-    IBOutlet UIButton *plus;
-    IBOutlet UIButton *equal;
-    IBOutlet UISegmentedControl *segmentControl;
-    IBOutlet UIButton *infoButton;
 }
 
-- (IBAction)clearAll:(UIButton *)sender;
-- (IBAction)clearInput:(UIButton *)sender;
-- (IBAction)secondKey:(UIButton *)sender;
-- (IBAction)toggleSwitch:(UISwitch *)sender;
-- (IBAction)numPressed:(UIButton *)sender;
-- (IBAction)operatorPressed:(UIButton *)sender;
-- (IBAction)bgColorSegBtn:(UISegmentedControl *)sender;
+-(IBAction)onButton:(id)sender; //on button
+-(IBAction)onNumberPressed:(id)sender; //number button
+-(IBAction)onClear:(id)sender; //clear button
+-(IBAction)onClearAll:(id)sender; //clear all button
+-(IBAction)onClick:(id)sender; //operator button
+-(IBAction)onChangeBackgroundClick:(id)sender; //change background color
+-(IBAction)onInfoClick:(id)sender; //info button
+
+
+
 
 @end
