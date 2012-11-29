@@ -70,39 +70,41 @@
     }
 }
 
--(IBAction)onOperatorClick:(id)sender; //operator button
+-(IBAction)onOperatorClick:(id)sender
 {
-    if (operatorButton == 0) result = currentNumber;
-    else {
-        switch (operatorButton) {
-                
-            case 1:
-                result = result + currentNumber;
-                break;
-                
-            case 2:
-                result = result - currentNumber;
-                break;
-                
-            case 3:
-                result = result * currentNumber;
-                break;
-                
-            case 4:
-                result = result / currentNumber;
-                break;
-                
-            case 5:
-                operatorButton = 0;
-                break;
-                
+    if (sender != nil)
+    {
+        if (operatorButton == 0)
+        {
+            result = currentNumber;  //equals
         }
+        else
+        {
+            switch (operatorButton) {
+                case 1:
+                    result = result + currentNumber; //plus
+                    break;
+                    
+                case 2:
+                    result = result - currentNumber; //minus
+                    break;
+                    
+                case 3:
+                    result = result * currentNumber; //multiply
+                    break;
+                    
+                case 4:
+                    result = result / currentNumber; //divide
+                    break;
+        }
+        
     }
-    
     currentNumber = 0;
-    displayCalculator.text = [NSString stringWithFormat:@"%2f",result];
-    if ([sender tag] == 0) result = 0;
+    displayCalculator.text = [NSString stringWithFormat:@"%2f", result];
+    if ([sender tag] == 0)
+        result = 0;
     operatorButton = [sender tag];
+    }
 }
 
 -(IBAction)onChangeBackgroundClick:(id)sender; //change background color

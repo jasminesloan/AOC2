@@ -177,7 +177,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onNumberPressed:" destination="2" eventType="touchDragOutside" id="sNn-Ut-mgO"/>
+                                    <action selector="onNumberPressed:" destination="2" eventType="touchUpInside" id="cKB-97-M6S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5a-AH-KTD">
