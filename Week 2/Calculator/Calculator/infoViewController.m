@@ -35,4 +35,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)onClose:(id)sender
+{
+    [self dismissModalViewControllerAnimated:TRUE];
+}
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "InfoViewController.h"
 
 @interface ViewController ()
 
@@ -19,7 +20,10 @@
     //loads calculator text field
     displayCalculator.text = @"0";
     
-    
+  //  imageIndex = 0;
+  //  blackwoodImage = [UIImage imageNamed:@"blackwood.jpg"];
+  //  darkwoodImage = [UIImage imageNamed:@"darkwood.jpg"];
+  //  woodgrainImage = [UIImage imageNamed:@"woodgrain.jpg"];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -99,6 +103,47 @@
     displayCalculator.text = [NSString stringWithFormat:@"%2f",result];
     if ([sender tag] == 0) result = 0;
     operatorButton = [sender tag];
+}
+
+-(IBAction)onChangeBackgroundClick:(id)sender; //change background color
+{
+    UISegmentedControl *segControl = (UISegmentedControl*)sender;
+    if (segControl != nil)
+    {
+        int selectedIndex = segControl.selectedSegmentIndex;
+        NSLog(@"You have selected index %d", selectedIndex);
+        switch (selectedIndex)
+        {
+            case 0:
+                self.view.backgroundColor = [UIColor whiteColor];
+                break;
+                
+            case 1:
+                self.view.backgroundColor = [UIColor colorWithRed:0 green:0.6 blue:0.8 alpha:1]; /*#0099cc*/
+                break;
+                
+            case 2:
+                self.view.backgroundColor = [UIColor colorWithRed:0 green:0.38 blue:0.11 alpha:1]; /*#00611c*/
+                break;
+            
+            case 3:
+                self.view.backgroundColor = [UIColor colorWithRed:0.69 green:0.09 blue:0.122 alpha:1]; /*#b0171f*/
+                break;
+                
+            default:
+                self.view.backgroundColor = [UIColor whiteColor];
+                break;
+        }
+    }
+}
+-(IBAction)onInfoClick:(id)sender
+{
+    infoViewController *viewController = [[infoViewController alloc] initWithNibName:@"infoViewController" bundle:nil];
+    if (viewController != nil)
+    {
+        [self presentModalViewController:viewController animated:YES];
+    }
+    
 }
 
 @end

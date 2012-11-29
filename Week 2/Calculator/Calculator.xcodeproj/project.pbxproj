@@ -26,6 +26,8 @@
 		DC465EDD166698A1004853AB /* blackwood.png in Resources */ = {isa = PBXBuildFile; fileRef = DC465EDA166698A1004853AB /* blackwood.png */; };
 		DC465EDE166698A1004853AB /* darkwood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC465EDB166698A1004853AB /* darkwood.jpg */; };
 		DC465EDF166698A1004853AB /* woodgrain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC465EDC166698A1004853AB /* woodgrain.jpg */; };
+		DC465EFB1666C6A3004853AB /* infoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC465EF91666C6A3004853AB /* infoViewController.m */; };
+		DC465EFC1666C6A3004853AB /* infoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC465EFA1666C6A3004853AB /* infoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,9 @@
 		DC465EDA166698A1004853AB /* blackwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackwood.png; sourceTree = "<group>"; };
 		DC465EDB166698A1004853AB /* darkwood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkwood.jpg; sourceTree = "<group>"; };
 		DC465EDC166698A1004853AB /* woodgrain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woodgrain.jpg; sourceTree = "<group>"; };
+		DC465EF81666C6A3004853AB /* infoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoViewController.h; sourceTree = "<group>"; };
+		DC465EF91666C6A3004853AB /* infoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoViewController.m; sourceTree = "<group>"; };
+		DC465EFA1666C6A3004853AB /* infoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +128,11 @@
 		DC465EA516669873004853AB /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				DC465EDA166698A1004853AB /* blackwood.png */,
 				DC465EDB166698A1004853AB /* darkwood.jpg */,
+				DC465EF81666C6A3004853AB /* infoViewController.h */,
+				DC465EF91666C6A3004853AB /* infoViewController.m */,
+				DC465EFA1666C6A3004853AB /* infoViewController.xib */,
+				DC465EDA166698A1004853AB /* blackwood.png */,
 				DC465EDC166698A1004853AB /* woodgrain.jpg */,
 				DC465EAE16669873004853AB /* AppDelegate.h */,
 				DC465EAF16669873004853AB /* AppDelegate.m */,
@@ -248,6 +256,7 @@
 				DC465EDD166698A1004853AB /* blackwood.png in Resources */,
 				DC465EDE166698A1004853AB /* darkwood.jpg in Resources */,
 				DC465EDF166698A1004853AB /* woodgrain.jpg in Resources */,
+				DC465EFC1666C6A3004853AB /* infoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +294,7 @@
 				DC465EAC16669873004853AB /* main.m in Sources */,
 				DC465EB016669873004853AB /* AppDelegate.m in Sources */,
 				DC465EBC16669873004853AB /* ViewController.m in Sources */,
+				DC465EFB1666C6A3004853AB /* infoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
