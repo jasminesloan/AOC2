@@ -203,7 +203,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onOperatorClick:" destination="2" eventType="touchUpInside" id="AEY-bP-vFC"/>
+                                    <action selector="onOperatorClick:" destination="2" eventType="touchUpInside" id="nSd-QA-QFZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc2-qN-bSN">
@@ -219,7 +219,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onOperatorClick:" destination="2" eventType="touchUpInside" id="AJE-ys-4ga"/>
+                                    <action selector="onOperatorClick:" destination="2" eventType="touchUpInside" id="L0G-Bl-zoX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lrx-ix-U7R">
@@ -232,7 +232,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onOperatorClick:" destination="2" eventType="touchUpInside" id="wmW-Xf-APP"/>
+                                    <action selector="onOperatorClick:" destination="2" eventType="touchUpInside" id="Xmk-wb-g6Y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zam-Xn-NRC">
@@ -245,7 +245,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onOperatorClick:" destination="2" eventType="touchUpInside" id="KTb-Eh-9DL"/>
+                                    <action selector="onOperatorClick:" destination="2" eventType="touchUpInside" id="g2z-Xq-7s0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eF-eZ-cC9">
@@ -258,7 +258,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onOperatorClick:" destination="2" eventType="touchUpInside" id="I4U-Zk-ZUb"/>
+                                    <action selector="onOperatorClick:" destination="2" eventType="touchUpInside" id="dT0-Sb-2ED"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Change Background" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a6-3m-Kjk">
@@ -378,9 +378,6 @@
                 <relationship kind="action" name="onNumberPressed:"/>
                 <relationship kind="action" name="onOperatorClick:"/>
                 <relationship kind="outlet" name="displayCalculator" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="imageView1" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="imageView2" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="imageView3" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="onOffButton" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="segmentedControl" candidateClass="UISegmentedControl"/>
             </relationships>

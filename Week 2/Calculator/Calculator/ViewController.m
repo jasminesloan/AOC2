@@ -19,11 +19,8 @@
 {
     //loads calculator text field
     displayCalculator.text = @"0";
-    
-  //  imageIndex = 0;
-  //  blackwoodImage = [UIImage imageNamed:@"blackwood.jpg"];
-  //  darkwoodImage = [UIImage imageNamed:@"darkwood.jpg"];
-  //  woodgrainImage = [UIImage imageNamed:@"woodgrain.jpg"];
+    numberButton = 0;
+
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -65,46 +62,46 @@
 {
     if (onOffButton.on != false)
     {
-        numberButton = numberButton*10 + (float)[sender tag];
-        displayCalculator.text = [NSString stringWithFormat:@"%2d", numberButton];
+        currentNumber = currentNumber*10 + (float)[sender tag];
+        displayCalculator.text = [NSString stringWithFormat:@"%2f", currentNumber];
     }
 }
 
--(IBAction)onOperatorClick:(id)sender
+-(IBAction)onOperatorClick:(id)sender; //operator button
 {
-    if (sender != nil)
-    {
-        if (operatorButton == 0)
-        {
-            result = currentNumber;  //equals
-        }
-        else
-        {
-            switch (operatorButton) {
-                case 1:
-                    result = result + currentNumber; //plus
-                    break;
-                    
-                case 2:
-                    result = result - currentNumber; //minus
-                    break;
-                    
-                case 3:
-                    result = result * currentNumber; //multiply
-                    break;
-                    
-                case 4:
-                    result = result / currentNumber; //divide
-                    break;
+    if (operatorButton == 0) result = currentNumber;
+    
+    else {
+        switch (operatorButton) {
+                
+            case 1:
+                result = result + currentNumber;
+                break;
+                
+            case 2:
+                result = result - currentNumber;
+                break;
+                
+            case 3:
+                result = result * currentNumber;
+                break;
+                
+            case 4:
+                result = result / currentNumber;
+                break;
+                
+            case 5:
+                operatorButton = 0;
+                break;
         }
         
     }
+    
     currentNumber = 0;
-    displayCalculator.text = [NSString stringWithFormat:@"%2f", result];
-    if ([sender tag] == 0)
-        result = 0;
+    displayCalculator.text = [NSString stringWithFormat:@"%2f",result];
+    if ([sender tag] == 0) result = 0;
     operatorButton = [sender tag];
-    }
+    
 }
 
 -(IBAction)onChangeBackgroundClick:(id)sender; //change background color

@@ -14,13 +14,6 @@
     IBOutlet UITextField *displayCalculator;
     IBOutlet UISwitch *onOffButton;
     IBOutlet UISegmentedControl *segmentedControl;
-    int imageIndex;
-    IBOutlet UIImageView *imageView1;
-    IBOutlet UIImageView *imageView2;
-    IBOutlet UIImageView *imageView3;
-    UIImage *blackwoodImage;
-    UIImage *darkwoodImage;
-    UIImage *woodgrainImage;
     int operatorButton;
     int numberButton;
     float currentNumber;
