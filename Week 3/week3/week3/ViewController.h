@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlanEventViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <PlanEventDelegate>
+{
+    NSString *eventString;
+    IBOutlet UITextView *listOfEvents;
+}
 @end

@@ -1,23 +1,170 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEg-GJ-7Kr">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HXa-b4-qKA">
+                                <color key="tintColor" red="0.33929177989999998" green="0.048480104609999998" blue="0.1048667145" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Plan Your Event!" id="pD5-BD-0rL">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="PaL-EE-Ucw">
+                                            <connections>
+                                                <segue destination="jJq-Rr-gtQ" kind="modal" identifier="Plan Event" id="xVc-AL-O60"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yEg-GJ-7Kr" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="LfF-02-EtB"/>
+                            <constraint firstItem="HXa-b4-qKA" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="YEQ-0I-d9i"/>
+                            <constraint firstItem="HXa-b4-qKA" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="afd-Wt-yvt"/>
+                            <constraint firstItem="yEg-GJ-7Kr" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="ghX-pq-aGU"/>
+                            <constraint firstItem="HXa-b4-qKA" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="iwu-RW-Ruf"/>
+                            <constraint firstItem="yEg-GJ-7Kr" firstAttribute="top" secondItem="HXa-b4-qKA" secondAttribute="bottom" type="default" id="tZE-qk-oMb"/>
+                            <constraint firstItem="yEg-GJ-7Kr" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="xYu-WF-Kh3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="listOfEvents" destination="yEg-GJ-7Kr" id="BMR-Ut-nQI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Plan Event View Controller-->
+        <scene sceneID="Q7k-Rd-boH">
+            <objects>
+                <viewController title="Plan Event View Controller" id="jJq-Rr-gtQ" userLabel="Plan Event View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J4y-sB-vzC">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="blackwood.png" translatesAutoresizingMaskIntoConstraints="NO" id="jnh-NF-wAb"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSB-cr-7xA">
+                                <color key="tintColor" red="0.33929177989999998" green="0.048480104609999998" blue="0.1048667145" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Add Your Event!" id="dHw-W5-0Uc">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="save" id="IxO-0Z-4MP"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="Wml-mR-2o9"/>
+                                        <connections>
+                                            <outlet property="leftBarButtonItem" destination="IxO-0Z-4MP" id="v0Y-wj-b5I"/>
+                                            <outlet property="rightBarButtonItem" destination="IxO-0Z-4MP" id="zsr-cg-N47"/>
+                                        </connections>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qw8-MU-J4Z">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="BGt-0l-Fq0"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="376381255.84876299">
+                                    <!--2012-12-05 06:20:55 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <timeZone key="timeZone" name="America/Los_Angeles">
+                                    <data key="data">
+VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
+y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
+5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
+8n/BkPNvwKD0X6OQ9U+ioPY/hZD3L4Sg+CiiEPkPZqD6CIQQ+viDIPvoZhD82GUg/chIEP64RyD/qCoQ
+AJgpIAGIDBACeAsgA3EokARhJ6AFUQqQBkEJoAcw7JAHjUOgCRDOkAmtvyAK8LCQC+CvoAzZzRANwJGg
+DrmvEA+priAQmZEQEYmQIBJ5cxATaXIgFFlVEBVJVCAWOTcQFyk2IBgiU5AZCRggGgI1kBryNKAb4heQ
+HNIWoB3B+ZAesfigH6HbkCB2KyAhgb2QIlYNICNq2hAkNe8gJUq8ECYV0SAnKp4QJ/7toCkKgBAp3s+g
+KupiECu+saAs036QLZ6ToC6zYJAvfnWgMJNCkDFnkiAycySQM0d0IDRTBpA1J1YgNjLokDcHOCA4HAUQ
+OOcaIDn75xA6xvwgO9vJEDywGKA9u6sQPo/6oD+bjRBAb9ygQYSpkEJPvqBDZIuQRC+goEVEbZBF89Mg
+Ry2KEEfTtSBJDWwQSbOXIErtThBLnLOgTNZqkE18laBOtkyQT1x3oFCWLpBRPFmgUnYQkFMcO6BUVfKQ
+VPwdoFY11JBW5TogWB7xEFjFHCBZ/tMQWqT+IFvetRBchOAgXb6XEF5kwiBfnnkQYE3eoGGHlZBiLcCg
+Y2d3kGQNoqBlR1mQZe2EoGcnO5BnzWagaQcdkGmtSKBq5v+Qa5ZlIGzQHBBtdkcgbq/+EG9WKSBwj+AQ
+cTYLIHJvwhBzFe0gdE+kEHT/CaB2OMCQdt7roHgYopB4vs2gefiEkHqer6B72GaQfH6RoH24SJB+XnOg
+f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
+</data>
+                                </timeZone>
+                            </datePicker>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Time &amp; Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzb-pq-UHo">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="8Rh-Tq-rD4"/>
+                                    <constraint firstAttribute="height" constant="21" id="hhh-ip-raH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Add Your Event:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuX-RP-nVv">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="YRs-GN-cah"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Event Here:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3B-NJ-thp">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qw8-MU-J4Z" firstAttribute="top" secondItem="rzb-pq-UHo" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5jQ-JD-hod"/>
+                            <constraint firstItem="rSB-cr-7xA" firstAttribute="trailing" secondItem="J4y-sB-vzC" secondAttribute="trailing" type="default" id="82S-ak-Nbe"/>
+                            <constraint firstItem="jnh-NF-wAb" firstAttribute="leading" secondItem="J4y-sB-vzC" secondAttribute="leading" type="default" id="9TX-2Z-t09"/>
+                            <constraint firstItem="rSB-cr-7xA" firstAttribute="top" secondItem="J4y-sB-vzC" secondAttribute="top" type="default" id="EfV-bF-fyB"/>
+                            <constraint firstItem="qw8-MU-J4Z" firstAttribute="trailing" secondItem="J4y-sB-vzC" secondAttribute="trailing" type="default" id="F4U-Lu-SFL"/>
+                            <constraint firstItem="qw8-MU-J4Z" firstAttribute="leading" secondItem="J4y-sB-vzC" secondAttribute="leading" type="default" id="IiP-Dd-83u"/>
+                            <constraint firstItem="c3B-NJ-thp" firstAttribute="leading" secondItem="J4y-sB-vzC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KNm-Ou-Z2q"/>
+                            <constraint firstItem="qw8-MU-J4Z" firstAttribute="bottom" secondItem="J4y-sB-vzC" secondAttribute="bottom" type="default" id="KUt-4c-wca"/>
+                            <constraint firstItem="fuX-RP-nVv" firstAttribute="top" secondItem="J4y-sB-vzC" secondAttribute="top" constant="69" id="Lug-8W-6gw"/>
+                            <constraint firstItem="jnh-NF-wAb" firstAttribute="bottom" secondItem="J4y-sB-vzC" secondAttribute="bottom" type="default" id="NdR-uP-ezg"/>
+                            <constraint firstItem="rSB-cr-7xA" firstAttribute="leading" secondItem="J4y-sB-vzC" secondAttribute="leading" type="default" id="QBF-Nr-bxa"/>
+                            <constraint firstItem="jnh-NF-wAb" firstAttribute="trailing" secondItem="J4y-sB-vzC" secondAttribute="trailing" type="default" id="YYE-DI-MSp"/>
+                            <constraint firstItem="fuX-RP-nVv" firstAttribute="leading" secondItem="J4y-sB-vzC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jGF-In-flx"/>
+                            <constraint firstAttribute="trailing" secondItem="c3B-NJ-thp" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="o1F-FI-S1U"/>
+                            <constraint firstItem="jnh-NF-wAb" firstAttribute="top" secondItem="J4y-sB-vzC" secondAttribute="top" type="default" id="pF7-W7-165"/>
+                            <constraint firstItem="rzb-pq-UHo" firstAttribute="leading" secondItem="J4y-sB-vzC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="sUT-nI-nxm"/>
+                            <constraint firstItem="c3B-NJ-thp" firstAttribute="top" secondItem="J4y-sB-vzC" secondAttribute="top" constant="105" id="wLn-VX-G24"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCz-0i-GIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="58"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="blackwood.png" width="640" height="480"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="listOfEvents" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
