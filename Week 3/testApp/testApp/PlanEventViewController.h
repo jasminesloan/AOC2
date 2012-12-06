@@ -8,6 +8,30 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlanEventViewController : UIViewController
+//delegate
+@protocol PlanEventDelegate <NSObject>
+
+@required
+- (void)passEvent:(NSString *)eventsSavedString;
+@end
+
+@interface PlanEventViewController : UIViewController <UITextFieldDelegate>
+
+{
+    
+    NSString *pickdateString;
+    NSString *eventsSavedString;
+    IBOutlet UITextField *pickEvent;
+    IBOutlet UIDatePicker *pickADate;
+    NSDate* eventDate;
+    id<PlanEventDelegate> customDelegate;
+    
+}
+
+@property (strong) id <PlanEventDelegate> customDelegate;
+-(IBAction)keyboardDismiss;
+-(NSString*)appendDate;
+-(IBAction)onChange:(id)sender;
+-(IBAction)onClick:(id)sender;
 
 @end

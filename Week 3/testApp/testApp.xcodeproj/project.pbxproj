@@ -23,6 +23,9 @@
 		DC1B638B16705B9B00029594 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1B636616705B9B00029594 /* Foundation.framework */; };
 		DC1B639316705B9B00029594 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC1B639116705B9B00029594 /* InfoPlist.strings */; };
 		DC1B639616705B9B00029594 /* testAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1B639516705B9B00029594 /* testAppTests.m */; };
+		DC1B63A216705C0D00029594 /* PlanEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1B63A016705C0D00029594 /* PlanEventViewController.m */; };
+		DC1B63A316705C0D00029594 /* PlanEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1B63A116705C0D00029594 /* PlanEventViewController.xib */; };
+		DC1B63A91670605A00029594 /* blackwood.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1B63A81670605A00029594 /* blackwood.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,10 @@
 		DC1B639216705B9B00029594 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC1B639416705B9B00029594 /* testAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testAppTests.h; sourceTree = "<group>"; };
 		DC1B639516705B9B00029594 /* testAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testAppTests.m; sourceTree = "<group>"; };
+		DC1B639F16705C0D00029594 /* PlanEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlanEventViewController.h; sourceTree = "<group>"; };
+		DC1B63A016705C0D00029594 /* PlanEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlanEventViewController.m; sourceTree = "<group>"; };
+		DC1B63A116705C0D00029594 /* PlanEventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanEventViewController.xib; sourceTree = "<group>"; };
+		DC1B63A81670605A00029594 /* blackwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackwood.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +124,16 @@
 		DC1B636A16705B9B00029594 /* testApp */ = {
 			isa = PBXGroup;
 			children = (
+				DC1B63A81670605A00029594 /* blackwood.png */,
 				DC1B637316705B9B00029594 /* AppDelegate.h */,
 				DC1B637416705B9B00029594 /* AppDelegate.m */,
 				DC1B637C16705B9B00029594 /* ViewController.h */,
 				DC1B637D16705B9B00029594 /* ViewController.m */,
 				DC1B637F16705B9B00029594 /* ViewController.xib */,
 				DC1B636B16705B9B00029594 /* Supporting Files */,
+				DC1B639F16705C0D00029594 /* PlanEventViewController.h */,
+				DC1B63A016705C0D00029594 /* PlanEventViewController.m */,
+				DC1B63A116705C0D00029594 /* PlanEventViewController.xib */,
 			);
 			path = testApp;
 			sourceTree = "<group>";
@@ -236,6 +247,8 @@
 				DC1B637916705B9B00029594 /* Default@2x.png in Resources */,
 				DC1B637B16705B9B00029594 /* Default-568h@2x.png in Resources */,
 				DC1B638116705B9B00029594 /* ViewController.xib in Resources */,
+				DC1B63A316705C0D00029594 /* PlanEventViewController.xib in Resources */,
+				DC1B63A91670605A00029594 /* blackwood.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +286,7 @@
 				DC1B637116705B9B00029594 /* main.m in Sources */,
 				DC1B637516705B9B00029594 /* AppDelegate.m in Sources */,
 				DC1B637E16705B9B00029594 /* ViewController.m in Sources */,
+				DC1B63A216705C0D00029594 /* PlanEventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
