@@ -1,6 +1,6 @@
 //
 //  PlanEventViewController.m
-//  week3
+//  testApp
 //
 //  Created by Jasmine Jamieson on 12/5/12.
 //  Copyright (c) 2012 com.fullsail. All rights reserved.
@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
