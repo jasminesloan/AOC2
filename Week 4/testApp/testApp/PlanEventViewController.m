@@ -40,7 +40,7 @@
     }
     else if ([sender tag] == 1)
     {
-        [self dismissModalViewControllerAnimated: YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
@@ -80,7 +80,7 @@
     {
         eventsSavedString = eventDescription.text;
         [customDelegate passEvent:[self appendDate]];
-        [self dismissModalViewControllerAnimated: YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
         
     }
     else

@@ -32,7 +32,7 @@
 {
     PlanEventViewController* addPlanEventView = [[PlanEventViewController alloc] initWithNibName:@"PlanEventViewController" bundle:nil];
     addPlanEventView.customDelegate = self;                             //assign my delegate to viewController
-    [self presentModalViewController:addPlanEventView animated:TRUE];
+    [self presentViewController:addPlanEventView animated:TRUE completion:NULL];
 }
 
 -(IBAction)onClick:(id)sender{
